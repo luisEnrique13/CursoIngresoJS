@@ -24,6 +24,7 @@ function Promedio ()
      precio2 = parseFloat(document.getElementById("txtIdPrecioDos").value);
      precio3 = parseFloat(document.getElementById("txtIdPrecioTres").value);
      resultado = (precio1 + precio2 + precio3)/3;
+     //resultado = resultado.toFixed(2);
      alert(`El promedio total es ${resultado}`);
 }
 function PrecioFinal () 
