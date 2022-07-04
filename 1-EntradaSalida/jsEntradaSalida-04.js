@@ -10,6 +10,6 @@ function mostrar()
    nombre = prompt("Ingrese Su Nombre");  
 
    document.getElementById("txtIdNombre").value = nombre;
-	
+	 
 }
 
