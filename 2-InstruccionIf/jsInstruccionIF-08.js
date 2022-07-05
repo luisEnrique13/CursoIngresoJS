@@ -8,7 +8,7 @@ function verificarEdadYestadoCivil(){
 	    if(edad<18 && estadocivil!="Soltero"){
 		return ;
 	    }
-		
+		 
 	      else{
 		     	if(edad>=18 && estadocivil=="Soltero"){
 			  	return alert("Es soltero y no es menor");
