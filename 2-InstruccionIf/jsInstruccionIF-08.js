@@ -17,7 +17,7 @@ function verificarEdadYestadoCivil(){
 
 }
 
-function mostrar()
+function mostrar() 
 {
 	verificarEdadYestadoCivil();
 
