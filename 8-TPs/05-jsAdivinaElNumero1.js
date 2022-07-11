@@ -7,20 +7,57 @@ secreto del 1 al 100, en la pantalla del juego
 “Usted es un ganador!!! y en solo X intentos”.
 de no ser igual se debe informar si “falta…”  para llegar al número secreto  o si “se pasó…”  del número secreto.
 */
-var numeroSecreto; 
-var contadorIntentos;
+let numeroSecreto;
+let contadorIntentos = 0;
+let numeroIngresado;
+let intentos;
 
+function numeroRandomEntre(min, max) {
+	//genero el número RANDOM entre x y x 
+	min = Math.ceil(min);
+	max = Math.floor(max);
+	return Math.floor(Math.random() * (max - min + 1) + min);
+  }
+  
 function comenzar()
 {
-	//Genero el número RANDOM entre 1 y 100
-	 
-		//alert(numeroSecreto );
-	
-
+  numeroSecreto = numeroRandomEntre(1, 100);
+  //console.log(`numero secreto ${numeroSecreto}`);
+  alert(`numero secreto es ${numeroSecreto}`);
+ 
 }
 
-function verificar()
-{
+function verificar(){
+
+
+  numeroIngresado =parseInt(document.getElementById("txtIdNumero").value);
+ 
+   switch(numeroIngresado){
+          case numeroIngresado:
+               contadorIntentos+=1;  
+               if(numeroIngresado!=numeroSecreto){              
+                  //console.log(`intentos ${intentos = parseInt(document.getElementById("txtIdIntentos").value = contadorIntentos)}`);
+                  intentos = parseInt(document.getElementById("txtIdIntentos").value = contadorIntentos);
+                } 
+                    else{
+                       //console.log(`intentos ${intentos = parseInt(document.getElementById("txtIdIntentos").value = contadorIntentos)}`);
+                        intentos = parseInt(document.getElementById("txtIdIntentos").value = contadorIntentos)}
+                        break;
+                    }
+                  
+   
 	
-	
-}
+  if(numeroIngresado>numeroSecreto){  
+    //console.log(`Su numero secreto era ${numeroSecreto} y se paso por ${(numeroIngresado - numeroSecreto) } numeros`);
+    alert(`Su numero secreto era ${numeroSecreto} y se paso por ${(numeroIngresado - numeroSecreto) } numeros`);
+     }
+        else if(numeroIngresado<numeroSecreto){
+          //console.log(`Su numero secreto era ${numeroSecreto} y le faltaron ${(numeroSecreto - numeroIngresado)} numeros para llegar`);
+          alert(`Su numero secreto era ${numeroSecreto} y le faltaron ${(numeroSecreto - numeroIngresado)} numeros para llegar`);
+          }
+              else{
+                //console.log(`Usted es un ganador!!! su numero secreto era ${numeroSecreto}, y en tan solo  ${intentos} intentos`);
+               alert(`Usted es un ganador!!! su numero secreto era ${numeroSecreto}, y en tan solo  ${intentos} intentos`);
+              }
+	  }
+  
