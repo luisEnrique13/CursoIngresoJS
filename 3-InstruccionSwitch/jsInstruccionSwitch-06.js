@@ -32,7 +32,7 @@ function mostrar()
 	  case 22: 
 	  case 23: 
 	  case 24: 
-	  case 6: "Es de noche";
+	  case 6: alert("Es de noche");
 	  break;
 
 
