@@ -42,9 +42,10 @@ function verificar(){
                     else{
                        //console.log(`intentos ${intentos = parseInt(document.getElementById("txtIdIntentos").value = contadorIntentos)}`);
                         intentos = parseInt(document.getElementById("txtIdIntentos").value = contadorIntentos)}
+                        break;
                     }
-                  
-   
+                 
+  
 	
   if(numeroIngresado>numeroSecreto){  
     //console.log(`Su numero secreto era ${numeroSecreto} y se paso por ${(numeroIngresado - numeroSecreto) } numeros`);
