@@ -32,7 +32,7 @@ function PrecioFinal ()
 	 precio1 = parseFloat(document.getElementById("txtIdPrecioUno").value);
      precio2 = parseFloat(document.getElementById("txtIdPrecioDos").value);
      precio3 = parseFloat(document.getElementById("txtIdPrecioTres").value);
-     iva = ((precio1 + precio2 + precio3) *21) / 100;
+     iva = (precio1 + precio2 + precio3) * (21 / 100);
      resultado = precio1 + precio2 + precio3 + iva;
      alert(`El precio final con iva es ${resultado}`);
 }
