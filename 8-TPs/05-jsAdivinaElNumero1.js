@@ -42,7 +42,6 @@ function verificar(){
                     else{
                        //console.log(`intentos ${intentos = parseInt(document.getElementById("txtIdIntentos").value = contadorIntentos)}`);
                         intentos = parseInt(document.getElementById("txtIdIntentos").value = contadorIntentos)}
-                        break;
                     }
                   
    
