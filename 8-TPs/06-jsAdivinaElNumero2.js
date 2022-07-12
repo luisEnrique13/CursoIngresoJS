@@ -30,7 +30,7 @@ function comenzar(){
 
   numeroSecreto = numeroRandomEntre(1, 100);
   //console.log(`numero secreto ${numeroSecreto}`);
-  alert(`numero secreto es ${numeroSecreto}`);
+  //alert(`numero secreto es ${numeroSecreto}`);
  
 }
 //-----------------------------------------------------------------------------------------------------------------------------------------------
