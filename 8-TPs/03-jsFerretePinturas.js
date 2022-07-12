@@ -16,6 +16,7 @@ function CentigradosFahrenheit ()
 {   
     //para temperaturas con decimales poner "." 
     
+    
     let temperatura = document.getElementById("txtIdTemperatura").value;
     let fahrenheitTotales = (temperatura * 1.8 ) + 32;
     alert(`${temperatura}C es igual a ${fahrenheitTotales}F`);
