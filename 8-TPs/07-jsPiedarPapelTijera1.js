@@ -50,6 +50,7 @@ function papel()
 }
 function tijera()
 { 
+   
     switch(eleccionMaquina){
          case 1:
             alert(`Perdiste`);
