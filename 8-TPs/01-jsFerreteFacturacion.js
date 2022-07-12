@@ -10,6 +10,7 @@ let resultado;
 let iva;
 
 function Sumar () 
+
 {    
      precio1 = parseFloat(document.getElementById("txtIdPrecioUno").value);
      precio2 = parseFloat(document.getElementById("txtIdPrecioDos").value);
