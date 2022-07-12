@@ -23,30 +23,27 @@ function comenzar()
 {
   numeroSecreto = numeroRandomEntre(1, 100);
   //console.log(`numero secreto ${numeroSecreto}`);
-  alert(`numero secreto es ${numeroSecreto}`);
+  console.log(`numero secreto es ${numeroSecreto}`);
  
 }
 
 function verificar(){
 
-
   numeroIngresado =parseInt(document.getElementById("txtIdNumero").value);
- 
    switch(numeroIngresado){
-          case numeroIngresado:
-               contadorIntentos+=1;  
-               if(numeroIngresado!=numeroSecreto){              
-                  //console.log(`intentos ${intentos = parseInt(document.getElementById("txtIdIntentos").value = contadorIntentos)}`);
-                  intentos = parseInt(document.getElementById("txtIdIntentos").value = contadorIntentos);
-                } 
-                    else{
-                       //console.log(`intentos ${intentos = parseInt(document.getElementById("txtIdIntentos").value = contadorIntentos)}`);
-                        intentos = parseInt(document.getElementById("txtIdIntentos").value = contadorIntentos)}
-                        break;
+          case numeroSecreto:
+            contadorIntentos+=1;
+            intentos = parseInt(document.getElementById("txtIdIntentos").value = contadorIntentos);
+            break;
+            
+            default: 
+            contadorIntentos+=1;
+            intentos = parseInt(document.getElementById("txtIdIntentos").value = contadorIntentos);
+
                     }
                  
   
-	
+
   if(numeroIngresado>numeroSecreto){  
     //console.log(`Su numero secreto era ${numeroSecreto} y se paso por ${(numeroIngresado - numeroSecreto) } numeros`);
     alert(`Su numero secreto era ${numeroSecreto} y se paso por ${(numeroIngresado - numeroSecreto) } numeros`);
@@ -56,8 +53,8 @@ function verificar(){
           alert(`Su numero secreto era ${numeroSecreto} y le faltaron ${(numeroSecreto - numeroIngresado)} numeros para llegar`);
           }
               else{
-                //console.log(`Usted es un ganador!!! su numero secreto era ${numeroSecreto}, y en tan solo  ${intentos} intentos`);
-               alert(`Usted es un ganador!!! su numero secreto era ${numeroSecreto}, y en tan solo  ${intentos} intentos`);
+               //console.log(`Usted es un ganador!!! su numero secreto era ${numeroSecreto}, y en tan solo  ${intentos} intentos`);
+               alert(`Usted es un ganador!!! su numero secreto era ${numeroSecreto}, y en tan solo  ${intentos } intentos`);
               }
 	  }
   
