@@ -7,7 +7,6 @@ function mostrar()
           case tierra:
              alert("aca vivimos");
             break;
-
-     
+            
      }
 }
