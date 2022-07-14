@@ -26,6 +26,7 @@ function mostrar()
                 alert("numeros concatenados" + num1 + num2);
             }
 
+            
         esMayorA10(resultado);
 
 }
