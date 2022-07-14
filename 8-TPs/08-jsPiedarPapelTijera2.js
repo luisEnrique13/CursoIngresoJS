@@ -73,6 +73,7 @@ function papel()
 		mostrarResultado();
 	
 	
+        
 }
 function tijera()
 { 
