@@ -9,7 +9,7 @@ E.	Si el importe final con descuento suma más de $120  se debe sumar un 10% de 
 
  */
 
- const PRECIO = 35;
+ let precio = 35;
  let descuento;
  let precioConDescuento;
  let importeFinal;
@@ -45,7 +45,7 @@ function CalcularPrecio ()
             }
                else {
                      descuento = 20;
-                }
+                } 
             break;
 
         case 5:  
@@ -61,19 +61,69 @@ function CalcularPrecio ()
                
     }
 
-    precioConDescuento = PRECIO - PRECIO * descuento /100;
-    document.getElementById("txtIdprecioDescuento").value = precioConDescuento;
-
-     importeFinal= precioConDescuento * cantidad;
+    precioConDescuento = precio - precio * descuento /100; 
+    importeFinal= precioConDescuento * cantidad;  
 
     if(importeFinal>120){
-        iibb = importeFinal*(10/100);
+        iibb = importeFinal*(10/100); 
         importeFinal +=  iibb;
-        alert(`El precio final es $ ${importeFinal} junto a $ ${iibb} de Ingresos Brutos`);
+        alert(`El precio final es $ ${importeFinal} junto a $ ${iibb} de Ingresos Brutos, costo por lamparita ${precioConDescuento}`);
     }
     else {
-        alert(`total $ ${importeFinal}`);
+        alert(`total $ ${importeFinal} precio por lamparita ${precioConDescuento}`);
     }
 
+    document.getElementById("txtIdprecioDescuento").value = importeFinal;
     
+
+     /*if(cantidad>=6){
+        descuento = 50;
+    }
+
+      else if (cantidad == 5){
+          if(marca=="ArgentinaLuz"){
+            descuento = 40;
+          }
+          else {
+            descuento = 30;
+          }
+      }
+         
+      else if(cantidad === 4 ){
+          if( marca == "ArgentinaLuz" || marca == "FelipeLamparas" ){
+            descuento = 25;
+          }
+                 else {
+                 descuento =20;
+                }
+       }
+
+       if(cantidad === 3 ){
+          if( marca == "ArgentinaLuz" ){
+            descuento = 15;
+          }
+            else if(marca == "FelipeLamparas"){
+            descuento =10;
+          }
+          else{
+            descuento = 5;
+          } 
+        }
+   
+        precioConDescuento = precio - precio * descuento /100; 
+        importeFinal= precioConDescuento * cantidad;  
+    
+        if(importeFinal>120){
+            iibb = importeFinal*(10/100); 
+            importeFinal +=  iibb;
+            alert(`El precio final es $ ${importeFinal} junto a $ ${iibb} de Ingresos Brutos, costo por lamparita ${precioConDescuento}`);
+        }
+        else {
+            alert(`total $ ${importeFinal} precio por lamparita ${precioConDescuento}`);
+        }
+    
+        document.getElementById("txtIdprecioDescuento").value = importeFinal; */
+
+    
+
 }
